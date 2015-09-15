@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?><component name="dataSourceStorage">
+  <data-source source="LOCAL" name="Data Source" product="Oracle" version="Oracle Database 10g Enterprise Edition Release 10.2.0.4.0 - Production&#10;With the Partitioning, OLAP, Data Mining and Real Application Testing options" jdbc-version="11.1" driver-name="Oracle JDBC driver" driver-version="11.1.0.7.0-Production" uuid="89b00de5-ab5e-4a01-95ce-21dba650aca5">
+    <extra-name-characters>$#</extra-name-characters>
+    <identifier-quote-string>"</identifier-quote-string>
+    <jdbc-driver>oracle.jdbc.OracleDriver</jdbc-driver>
+    <jdbc-url>jdbc:oracle:thin:[dshitov/EGtbkj5I]@//10.20.135.250:1521/WO</jdbc-url>
+    <user-name>dshitov</user-name>
+    <user-password>dfefdfeddfdedfc8dfc1dfc0df9fdfe3</user-password>
+    <schema-pattern>*.DSHITOV</schema-pattern>
+    <default-dialect>Oracle</default-dialect>
+    <libraries>
+      <library>
+        <url>file://$PROJECT_DIR$/lib/ojdbc6.jar</url>
+      </library>
+    </libraries>
+    <schema name="DSHITOV" catalog="" />
+    <table name="CODE_GEOITS" schema="DSHITOV" catalog="" type="TABLE">
+      <column name="CODE_ID" sqlType="NUMBER" length="22" precision="0" nullable="true" jdbcType="3" />
+      <column name="ID" sqlType="NUMBER" length="22" precision="0" nullable="true" jdbcType="3" />
+      <column name="CODE" sqlType="VARCHAR2" length="45" precision="0" nullable="true" jdbcType="12" />
+      <column name="SHORT_NAME_RUS" sqlType="VARCHAR2" length="60" precision="0" nullable="true" jdbcType="12" />
+      <column name="SHORT_NAME_ENG" sqlType="VARCHAR2" length="60" precision="0" nullable="true" jdbcType="12" />
+      <column name="NAME_RUS" sqlType="VARCHAR2" length="800" precision="0" nullable="true" jdbcType="12" />
+      <column name="NAME_ENG" sqlType="VARCHAR2" length="800" precision="0" nullable="true" jdbcType="12" />
+      <column name="CODE_STANDART_NAME" sqlType="VARCHAR2" length="25" precision="0" nullable="true" jdbcType="12" />
+      <column name="COMMENTS" sqlType="VARCHAR2" length="4000" precision="0" nullable="true" jdbcType="12" />
+      <column name="CODE_NAME_RUS" sqlType="VARCHAR2" length="200" precision="0" nullable="true" jdbcType="12" />
+      <column name="CODE_NAME_ENG" sqlType="VARCHAR2" length="200" precision="0" nullable="true" jdbcType="12" />
+      <column name="TYPE_PLATFORM" sqlType="VARCHAR2" length="60" precision="0" nullable="true" jdbcType="12" />
+      <index name="UK_CODE_GEOITS" unique="true" columns="ID,CODE_ID" />
+    </table>
+    <table name="CODE_GEOITS_BUFF" schema="DSHITOV" catalog="" type="TABLE">
+      <column name="CODE_ID" sqlType="NUMBER" length="22" precision="0" nullable="true" jdbcType="3" />
+      <column name="ID" sqlType="NUMBER" length="22" precision="0" nullable="true" jdbcType="3" />
+      <column name="CODE" sqlType="VARCHAR2" length="45" precision="0" nullable="true" jdbcType="12" />
+      <column name="SHORT_NAME_RUS" sqlType="VARCHAR2" length="60" precision="0" nullable="true" jdbcType="12" />
+      <column name="SHORT_NAME_ENG" sqlType="VARCHAR2" length="60" precision="0" nullable="true" jdbcType="12" />
+      <column name="NAME_RUS" sqlType="VARCHAR2" length="800" precision="0" nullable="true" jdbcType="12" />
+      <column name="NAME_ENG" sqlType="VARCHAR2" length="800" precision="0" nullable="true" jdbcType="12" />
+      <column name="CODE_STANDART_NAME" sqlType="VARCHAR2" length="25" precision="0" nullable="true" jdbcType="12" />
+      <column name="COMMENTS" sqlType="VARCHAR2" length="4000" precision="0" nullable="true" jdbcType="12" />
+      <column name="CODE_NAME_RUS" sqlType="VARCHAR2" length="200" precision="0" nullable="true" jdbcType="12" />
+      <column name="CODE_NAME_ENG" sqlType="VARCHAR2" length="200" precision="0" nullable="true" jdbcType="12" />
+      <column name="TYPE_PLATFORM" sqlType="VARCHAR2" length="60" precision="0" nullable="true" jdbcType="12" />
+      <index name="UK_CODE_GEOITS_BUFF" unique="true" columns="ID,CODE_ID" />
+    </table>
+    <table name="T" schema="DSHITOV" catalog="" type="TABLE">
+      <column name="ID" sqlType="NUMBER" length="22" precision="0" nullable="false" jdbcType="3" />
+      <column name="TYPE" sqlType="VARCHAR2" length="999" precision="0" nullable="true" jdbcType="12" />
+      <column name="GF3_CODE" sqlType="VARCHAR2" length="9" precision="0" nullable="true" jdbcType="12" />
+      <column name="SPHERE" sqlType="VARCHAR2" length="20" precision="0" nullable="true" jdbcType="12" />
+      <column name="PROCESS" sqlType="VARCHAR2" length="20" precision="0" nullable="true" jdbcType="12" />
+      <column name="STATISTIC" sqlType="VARCHAR2" length="20" precision="0" nullable="true" jdbcType="12" />
+      <column name="NAME_RUS" sqlType="VARCHAR2" length="999" precision="0" nullable="true" jdbcType="12" />
+      <column name="NAME_ENG" sqlType="VARCHAR2" length="999" precision="0" nullable="true" jdbcType="12" />
+      <column name="NAME_OUT_RUS" sqlType="VARCHAR2" length="999" precision="0" nullable="true" jdbcType="12" />
+      <column name="NAME_OUT_ENG" sqlType="VARCHAR2" length="999" precision="0" nullable="true" jdbcType="12" />
+      <column name="ACCURACY" sqlType="VARCHAR2" length="999" precision="0" nullable="true" jdbcType="12" />
+      <column name="UNIT" sqlType="VARCHAR2" length="999" precision="0" nullable="true" jdbcType="12" />
+      <column name="MIN_VALUE" sqlType="VARCHAR2" length="999" precision="0" nullable="true" jdbcType="12" />
+      <column name="MAX_VALUE" sqlType="VARCHAR2" length="999" precision="0" nullable="true" jdbcType="12" />
+      <column name="TIME_SCALE" sqlType="VARCHAR2" length="999" precision="0" nullable="true" jdbcType="12" />
+      <column name="SPACE_SCALE" sqlType="VARCHAR2" length="999" precision="0" nullable="true" jdbcType="12" />
+      <column name="MODULE" sqlType="VARCHAR2" length="999" precision="0" nullable="true" jdbcType="12" />
+      <column name="VERT_DIMENS_MIN" sqlType="VARCHAR2" length="999" precision="0" nullable="true" jdbcType="12" />
+      <column name="VERT_DIMENS_MAX" sqlType="VARCHAR2" length="999" precision="0" nullable="true" jdbcType="12" />
+      <column name="CODE_NAME" sqlType="VARCHAR2" length="999" precision="0" nullable="true" jdbcType="12" />
+      <column name="METHOD" sqlType="VARCHAR2" length="999" precision="0" nullable="true" jdbcType="12" />
+      <column name="DESCRIPTION" sqlType="VARCHAR2" length="4000" precision="0" nullable="true" jdbcType="12" />
+      <column name="CREATED" sqlType="DATE" length="7" precision="0" nullable="true" jdbcType="93" def="c3lzZGF0ZQo=" version="true" />
+      <column name="MODIFIED" sqlType="DATE" length="7" precision="0" nullable="true" jdbcType="93" def="c3lzZGF0ZQo=" version="true" />
+      <column name="TYPE_NOTATION" sqlType="VARCHAR2" length="25" precision="0" nullable="true" jdbcType="12" />
+      <column name="GROUP_ID" sqlType="NUMBER" length="22" precision="0" nullable="true" jdbcType="3" />
+      <column name="FORMAT" sqlType="VARCHAR2" length="15" precision="0" nullable="true" jdbcType="12" />
+      <column name="ESIMO_CODE" sqlType="VARCHAR2" length="20" precision="0" nullable="true" jdbcType="12" />
+      <column name="BODC_CODE" sqlType="VARCHAR2" length="9" precision="0" nullable="true" jdbcType="12" />
+      <primary-key name="PK#T" columns="ID" />
+    </table>
+    <table name="T_D" schema="DSHITOV" catalog="" type="TABLE">
+      <column name="ID" sqlType="NUMBER" length="22" precision="0" nullable="false" jdbcType="3" />
+      <column name="TYPE" sqlType="VARCHAR2" length="999" precision="0" nullable="true" jdbcType="12" />
+      <column name="GF3_CODE" sqlType="VARCHAR2" length="9" precision="0" nullable="true" jdbcType="12" />
+      <column name="SPHERE" sqlType="VARCHAR2" length="20" precision="0" nullable="true" jdbcType="12" />
+      <column name="PROCESS" sqlType="VARCHAR2" length="20" precision="0" nullable="true" jdbcType="12" />
+      <column name="STATISTIC" sqlType="VARCHAR2" length="20" precision="0" nullable="true" jdbcType="12" />
+      <column name="NAME_RUS" sqlType="VARCHAR2" length="999" precision="0" nullable="true" jdbcType="12" />
+      <column name="NAME_ENG" sqlType="VARCHAR2" length="999" precision="0" nullable="true" jdbcType="12" />
+      <column name="NAME_OUT_RUS" sqlType="VARCHAR2" length="999" precision="0" nullable="true" jdbcType="12" />
+      <column name="NAME_OUT_ENG" sqlType="VARCHAR2" length="999" precision="0" nullable="true" jdbcType="12" />
+      <column name="ACCURACY" sqlType="VARCHAR2" length="999" precision="0" nullable="true" jdbcType="12" />
+      <column name="UNIT" sqlType="VARCHAR2" length="999" precision="0" nullable="true" jdbcType="12" />
+      <column name="MIN_VALUE" sqlType="VARCHAR2" length="999" precision="0" nullable="true" jdbcType="12" />
+      <column name="MAX_VALUE" sqlType="VARCHAR2" length="999" precision="0" nullable="true" jdbcType="12" />
+      <column name="TIME_SCALE" sqlType="VARCHAR2" length="999" precision="0" nullable="true" jdbcType="12" />
+      <column name="SPACE_SCALE" sqlType="VARCHAR2" length="999" precision="0" nullable="true" jdbcType="12" />
+      <column name="MODULE" sqlType="VARCHAR2" length="999" precision="0" nullable="true" jdbcType="12" />
+      <column name="VERT_DIMENS_MIN" sqlType="VARCHAR2" length="999" precision="0" nullable="true" jdbcType="12" />
+      <column name="VERT_DIMENS_MAX" sqlType="VARCHAR2" length="999" precision="0" nullable="true" jdbcType="12" />
+      <column name="CODE_NAME" sqlType="VARCHAR2" length="999" precision="0" nullable="true" jdbcType="12" />
+      <column name="METHOD" sqlType="VARCHAR2" length="999" precision="0" nullable="true" jdbcType="12" />
+      <column name="DESCRIPTION" sqlType="VARCHAR2" length="4000" precision="0" nullable="true" jdbcType="12" />
+      <column name="CREATED" sqlType="DATE" length="7" precision="0" nullable="true" jdbcType="93" def="c3lzZGF0ZQo=" />
+      <column name="MODIFIED" sqlType="DATE" length="7" precision="0" nullable="true" jdbcType="93" def="c3lzZGF0ZQo=" />
+      <column name="TYPE_NOTATION" sqlType="VARCHAR2" length="25" precision="0" nullable="true" jdbcType="12" />
+      <column name="GROUP_ID" sqlType="NUMBER" length="22" precision="0" nullable="true" jdbcType="3" />
+      <column name="FORMAT" sqlType="VARCHAR2" length="15" precision="0" nullable="true" jdbcType="12" />
+      <column name="ESIMO_CODE" sqlType="VARCHAR2" length="20" precision="0" nullable="true" jdbcType="12" />
+      <column name="BODC_CODE" sqlType="VARCHAR2" length="9" precision="0" nullable="true" jdbcType="12" />
+      <primary-key name="PK#T_D" columns="ID" />
+    </table>
+    <table name="UDOP_GEOITS" schema="DSHITOV" catalog="" type="TABLE">
+      <column name="TYPE_NOTATION" sqlType="VARCHAR2" length="45" precision="0" nullable="true" jdbcType="12" />
+      <column name="DESCRIPTION" sqlType="VARCHAR2" length="4000" precision="0" nullable="true" jdbcType="12" />
+      <column name="NAME_RUS" sqlType="VARCHAR2" length="999" precision="0" nullable="true" jdbcType="12" />
+      <column name="SHORT_NAME_RUS" sqlType="VARCHAR2" length="999" precision="0" nullable="true" jdbcType="12" />
+      <column name="CODE" sqlType="VARCHAR2" length="50" precision="0" nullable="false" jdbcType="12" />
+      <column name="UNIT" sqlType="VARCHAR2" length="25" precision="0" nullable="true" jdbcType="12" />
+      <column name="MIN_VALUE" sqlType="VARCHAR2" length="999" precision="0" nullable="true" jdbcType="12" />
+      <column name="MAX_VALUE" sqlType="VARCHAR2" length="999" precision="0" nullable="true" jdbcType="12" />
+      <column name="ACCURACY" sqlType="VARCHAR2" length="999" precision="0" nullable="true" jdbcType="12" />
+      <column name="TYPE" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="PRINTFIELD" sqlType="VARCHAR2" length="3" precision="0" nullable="true" jdbcType="12" />
+      <column name="PRINTDEC" sqlType="VARCHAR2" length="3" precision="0" nullable="true" jdbcType="12" />
+      <column name="NAME_ENG" sqlType="VARCHAR2" length="999" precision="0" nullable="true" jdbcType="12" />
+      <column name="SHORT_NAME_ENG" sqlType="VARCHAR2" length="999" precision="0" nullable="true" jdbcType="12" />
+      <column name="CREATED" sqlType="DATE" length="7" precision="0" nullable="true" jdbcType="93" />
+      <column name="MODIFIED" sqlType="DATE" length="7" precision="0" nullable="true" jdbcType="93" />
+      <column name="FORMAT" sqlType="VARCHAR2" length="15" precision="0" nullable="true" jdbcType="12" />
+      <column name="UNIT_ENG" sqlType="VARCHAR2" length="25" precision="0" nullable="true" jdbcType="12" />
+      <column name="CODE_BODC" sqlType="VARCHAR2" length="9" precision="0" nullable="true" jdbcType="12" />
+      <primary-key name="PK_UDOP_GEOITS" columns="CODE" />
+    </table>
+    <table name="UDOP_GEOITS_BUFF" schema="DSHITOV" catalog="" type="TABLE">
+      <column name="TYPE_NOTATION" sqlType="VARCHAR2" length="45" precision="0" nullable="true" jdbcType="12" />
+      <column name="DESCRIPTION" sqlType="VARCHAR2" length="4000" precision="0" nullable="true" jdbcType="12" />
+      <column name="NAME_RUS" sqlType="VARCHAR2" length="999" precision="0" nullable="true" jdbcType="12" />
+      <column name="SHORT_NAME_RUS" sqlType="VARCHAR2" length="999" precision="0" nullable="true" jdbcType="12" />
+      <column name="CODE" sqlType="VARCHAR2" length="50" precision="0" nullable="false" jdbcType="12" />
+      <column name="UNIT" sqlType="VARCHAR2" length="25" precision="0" nullable="true" jdbcType="12" />
+      <column name="MIN_VALUE" sqlType="VARCHAR2" length="999" precision="0" nullable="true" jdbcType="12" />
+      <column name="MAX_VALUE" sqlType="VARCHAR2" length="999" precision="0" nullable="true" jdbcType="12" />
+      <column name="ACCURACY" sqlType="VARCHAR2" length="999" precision="0" nullable="true" jdbcType="12" />
+      <column name="TYPE" sqlType="VARCHAR2" length="1" precision="0" nullable="true" jdbcType="12" />
+      <column name="PRINTFIELD" sqlType="VARCHAR2" length="3" precision="0" nullable="true" jdbcType="12" />
+      <column name="PRINTDEC" sqlType="VARCHAR2" length="3" precision="0" nullable="true" jdbcType="12" />
+      <column name="NAME_ENG" sqlType="VARCHAR2" length="999" precision="0" nullable="true" jdbcType="12" />
+      <column name="SHORT_NAME_ENG" sqlType="VARCHAR2" length="999" precision="0" nullable="true" jdbcType="12" />
+      <column name="CREATED" sqlType="DATE" length="7" precision="0" nullable="true" jdbcType="93" />
+      <column name="MODIFIED" sqlType="DATE" length="7" precision="0" nullable="true" jdbcType="93" />
+      <column name="FORMAT" sqlType="VARCHAR2" length="15" precision="0" nullable="true" jdbcType="12" />
+      <column name="UNIT_ENG" sqlType="VARCHAR2" length="25" precision="0" nullable="true" jdbcType="12" />
+      <column name="CODE_BODC" sqlType="VARCHAR2" length="9" precision="0" nullable="true" jdbcType="12" />
+      <primary-key name="PK_UDOP_GEOITS_BUFF" columns="CODE" />
+    </table>
+  </data-source>
+</component>

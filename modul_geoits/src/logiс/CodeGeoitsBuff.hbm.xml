@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="logiс.CodeGeoitsBuff" table="CODE_GEOITS_BUFF">
+    <id column="ID" name="id" >
+    <generator class="increment"/>
+    </id>
+    <property column="CODE_ID" name="codeId" />
+        <property column="CODE" name="code" type="java.lang.String"/>
+        <property column="SHORT_NAME_RUS" name="shortNameRU" type="java.lang.String"/>
+        <property column="SHORT_NAME_ENG" name="shortNameEN" type="java.lang.String"/>
+        <property column="NAME_RUS" name="nameRU" type="java.lang.String"/>
+        <property column="NAME_ENG" name="nameEN" type="java.lang.String"/>
+        <property column="CODE_STANDART_NAME" name="codeStandartName" type="java.lang.String"/>
+        <property column="COMMENTS" name="comments" type="java.lang.String"/>
+        <property column="CODE_NAME_RUS" name="codeNameRU" type="java.lang.String"/>
+        <property column="CODE_NAME_ENG" name="codeNameEN" type="java.lang.String"/>
+        <property column="TYPE_PLATFORM" name="typePlatform" type="java.lang.String"/>
+    </class>
+</hibernate-mapping>

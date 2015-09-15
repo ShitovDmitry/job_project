@@ -1,0 +1,17 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="modul_geoits:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/modul_geoits_war_exploded.war</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="modul_geoits/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="modul_geoits" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="hibernate-4.2.2" />
+          <element id="library" level="project" name="ojdbc6" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
